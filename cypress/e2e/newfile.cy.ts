@@ -1,0 +1,9 @@
+/// <reference types= "cypress"/>
+
+describe("test", () => {
+    it("visit homepage", () => {
+        cy.visitHomepage()
+        cy.login("hsfsaf", "sadfasdfsadf")
+    })
+
+})
