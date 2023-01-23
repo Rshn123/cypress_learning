@@ -2,8 +2,6 @@
 
 describe("test", () => {
     it("visit homepage", () => {
-        cy.visitHomepage()
-        cy.login("hsfsaf", "sadfasdfsadf")
+        cy.visitHomepage();
     })
-
 })

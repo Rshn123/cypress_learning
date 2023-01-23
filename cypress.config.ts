@@ -10,7 +10,7 @@ export default defineConfig({
     toConsole: true
   },
   e2e: {
-    baseUrl: "https://www.google.com",
+    baseUrl: "https://example.cypress.io",
     setupNodeEvents(on, config) {
 
     },

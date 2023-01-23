@@ -17,5 +17,5 @@ declare namespace Cypress {
 }
 
 Cypress.Commands.add("visitHomepage", () => {
-    cy.visit("https://www.google.com")
+    cy.visit("/")
 })
