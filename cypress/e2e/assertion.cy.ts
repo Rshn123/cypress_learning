@@ -34,5 +34,25 @@ describe("BDD assertion", () => {
         }
         expect(obj).to.equal(obj)
         expect(obj).to.not.deep.equal({ greet: "hello wfforld" })
+        expect('fooBar').to.match(/bar$/i)
+
     })
+
+    it('Assert assertion used', () => {
+        const person = {
+            name: "joe",
+            age: 20
+        }
+        assert.isObject(person, 'value is object')
+    })
+
+    it.only('Callback assertion', () => {
+        cy.get('.doc-header').find('div')
+            .should(($div) => {
+                expect($div).to.have.length(1)
+                const className = $div[0].className
+                expect(className).to.match(/heading-/)
+            })
+    })
+
 })
